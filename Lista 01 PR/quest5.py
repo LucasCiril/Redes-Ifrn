@@ -4,8 +4,9 @@ print('Este programa calcula o preço a ser pago pelo estacionamento do seu carr
 
 minutos = float(input('Digite o número de minutos em que o carro ficou estacionado: '))
 
-
-hora_exced = (minutos - 240) / 60
+if minutos >= 720:
+    print('O valor a ser pago é de 30,00 R$')
+    sys.exit()
 
 if minutos <= 60:
     print('O valor a ser pago é de: 8,00 R$')
@@ -27,7 +28,5 @@ elif minutos <= 540:
     print('O valor a ser pago é de: 41,00 R$')
 elif minutos <= 600:
     print('O valor a ser pago é de: 44,00 R$')
-elif minutos <= 660:
+else:
     print('O valor a ser pago é de: 47,00 R$')
-elif minutos >= 720:
-    print('O valor a ser pago é de: 30,00 R$')
