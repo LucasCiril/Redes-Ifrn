@@ -3,19 +3,19 @@ import sys
 print('Computador de bordo, ativado.')
 
 hr_partida = int(input('Hora da partida (0-23): '))
-if hr_partida <0 or hr_partida > 24:
+if hr_partida <0:
     print('Hora inválida!')
     sys.exit()
 min_partida = int(input('Minuto da partida (0-59): '))
-if min_partida <0 or min_partida > 59:
+if min_partida <0:
     print('Minuto inválido!')
     sys.exit()
 hr_chegada = int(input('Hora da chegada (0-23): '))
-if hr_chegada <0 or hr_chegada > 24:
+if hr_chegada <0:
     print('Hora inválida!')
     sys.exit()
 min_chegada = int(input('Minuto da chegada (0-59): '))
-if min_chegada <0 or min_chegada > 59:
+if min_chegada <0:
     print('Minuto inválido!')
     sys.exit()
 segundos_descanso = int(input('Segundos parados para descanso: '))
