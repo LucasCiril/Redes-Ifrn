@@ -34,3 +34,4 @@ else:
     dt_aposentadoria_contrib = dt_inicio_contrib + timedelta(days=tempo_aposentadoria*365)
     dt_aposentadoria = max (dt_aposentadoria_idade, dt_aposentadoria_contrib)
     print(f'Você poderá se aposentar em {dt_aposentadoria.strftime('%d/%m/%Y')}.')
+    print(f'Você tem {idade_atual} anos.')
